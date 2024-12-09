@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чамд зориулав</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white;
+      background-color: #f06292;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e91e63;
+    }
+    img {
+      max-width: 400px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+<h1>КҮҮШ ШАЙНУУУУУ!</h1>
+<button onclick="openSurprise()">ДАРААРАЙ</button>
+<div>
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cute Cat GIF">
+</div>
+
+<script>
+  function openSurprise() {
+    // Open a new window
+    const surpriseWindow = window.open("", "SurpriseWindow", "width=500,height=500");
+
+    // Add HTML content to the new window
+    surpriseWindow.document.write(`
+                <html>
+                <head>
+                    <title>Surprise!</title>
+                    <style>
+                        body {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                            background-color: #ffebee;
+                            font-family: Arial, sans-serif;
+                        }
+                        h1 {
+                            color: #e91e63;
+                            font-size: 3em;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                        img {
+                            max-width: 200px;
+                            border-radius: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>ХАЙРТАЙ ШҮҮҮҮҮ! 🩵</h1>
+                    <div>
+                                         <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGw1amI3MHhzNmQwZW05eG82MTQ2cDA2NTd4c2M2ZDk4eWkzcTljMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LTcau7EnQLhHkxxG2u/giphy.gif" alt="Kissing Cat GIF">
+
+</div>
+                </body>
+                </html>
+            `);
+
+    // Close the window after 10 seconds
+    setTimeout(() => {
+      surpriseWindow.close();
+    }, 10000);
+  }
+</script>
+</body>
+</html>
